@@ -1,0 +1,10 @@
+sysread
+sysread
+sysread
+sysread
+sysread
+ssread
+sysread
+sysread
+hogeRead
+SYSREAD
