@@ -10,10 +10,8 @@ while ($line = <>) {
     }
     if ($line =~ m/^reply-to: (.*)/i) {
         $reply_address = $1;
-        #print "Reply matched\n";
     }
-    if ($line =~ m/^From: (\S)+ \(([^()]*)\)/i) {
-        #print "From matched\n";
+    if ($line =~ m/^From: (\S+) \(([^()]*)\)/i) {
         $reply_address = $1;
         $from_name = $2;
     }
