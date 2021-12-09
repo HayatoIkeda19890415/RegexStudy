@@ -1,0 +1,3 @@
+This is sample file.
+It has three lines.
+That's all.
