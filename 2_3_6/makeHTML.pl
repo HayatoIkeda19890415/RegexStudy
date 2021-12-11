@@ -10,5 +10,16 @@ $text =~ s/>/&gt;/g;
 # $text =~ s/^$/<p>/mg
 $text =~ s/^\s*$/<p>/m; # /m:文字列を複数行として扱う修飾子
 
+# メールアドレスを変換
+$text =~ s/
+    \b(
+        \w[-.\w]*
+        \@
+        [-a-z0-9]+(\.[-a-z0-9]+)*\.(com|edu|info)
+    )\b
+    /
+    <a href="mailto:$1">$1<\/a>
+    /gix;
+
 print $text;
 
