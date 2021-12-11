@@ -2,3 +2,5 @@ This is sample file.
 It has three lines.
 That's all.
 Mail: test@example.com
+Page1: http://gfoodd.com/26-2
+Page2: https://qiita.com/timeline
